@@ -2,6 +2,7 @@ package mib_desk.menus
 
 import mib_desk.bean.Alien
 import mib_desk.exporters.AlienExporter
+import mib_desk.managers.AlienManager
 
 class RegstrationMenu extends Menu( "Registration Form" ) {
   def menu(): Boolean = {
@@ -18,12 +19,15 @@ class RegstrationMenu extends Menu( "Registration Form" ) {
       hands,
       legs,
       planet );
-    
+
+    AlienManager.addAlien( alien );
+
     var shouldExport = getValue( "Do you want to export the data? (y/Y)" );
-    
-    if(shouldExport.equalsIgnoreCase("y")){
-      var alienExporter = new AlienExporter(alien);
+
+    if ( shouldExport.equalsIgnoreCase( "y" ) ) {
+      var alienExporter = new AlienExporter( alien );
     }
+
     return false;
   }
 }
