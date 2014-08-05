@@ -1,5 +1,5 @@
 package mib_desk.formats
 
-trait FormatBase  {
+class Text extends Format {
 
 }
