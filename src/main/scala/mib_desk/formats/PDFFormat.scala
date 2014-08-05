@@ -1,5 +1,5 @@
 package mib_desk.formats
 
-class Pdf extends Format {
-
+class Pdf extends Format("PDF") {
+	
 }

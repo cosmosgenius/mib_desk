@@ -1,5 +1,7 @@
 package mib_desk.menus
 
+import mib_desk.formats._
+
 class MainMenu extends Menu("Welcome to MIB Registration Desk"){
   def menu():Boolean = {
     println( "\n\tWhat would you like to do?" );
@@ -14,8 +16,6 @@ class MainMenu extends Menu("Welcome to MIB Registration Desk"){
     } catch {
       case e: NumberFormatException => println( "\n\tInvalid option!! Try again" );
     }
-    
-    
     
     return handleOption( option );;
   }
