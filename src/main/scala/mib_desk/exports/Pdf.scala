@@ -1,5 +1,5 @@
 package mib_desk.exports
 
-class Pdf {
+class Pdf extends ExportBase {
 
 }

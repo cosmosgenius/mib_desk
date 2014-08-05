@@ -1,5 +1,5 @@
 package mib_desk.exports
 
-class text {
+class Text extends ExportBase {
 
 }
