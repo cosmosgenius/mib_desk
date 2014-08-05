@@ -4,6 +4,6 @@ import mib_desk.menus.MainMenu
 
 object Main {
   def main( args: Array[String] ): Unit = {
-    while ( MainMenu.show() ) {};
+    ( new MainMenu).show();
   }
 }

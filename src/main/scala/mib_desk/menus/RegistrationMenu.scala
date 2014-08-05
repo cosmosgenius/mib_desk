@@ -1,15 +1,13 @@
 package mib_desk.menus
 
-object RegstrationMenu {
-  def show(): Int = {
-    println( "\n\n\tRegistration Form" );
-    println( "\n\tCode Name provided to you?" );
-    println( "\tWhich Planet?" );
-    println( "\tColor of Blood?" );
-    println( "\tNumber of Antennas?" );
-    println( "\tNumber of Hands?" );
-    println( "\tNumber of Legs?" );
-    
-    return 0;
+class RegstrationMenu extends Menu("Registration Form") {
+  def menu ():Boolean = {
+    getValue( "Code Name provided to you?" );
+    getValue( "Which Planet?" );
+    getValue( "Color of Blood?" );
+    getValue( "Number of Antennas?" );
+    getValue( "Number of Hands?" );
+    getValue( "Number of Legs?" );
+    return false;
   }
 }
