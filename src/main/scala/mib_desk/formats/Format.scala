@@ -1,5 +1,5 @@
 package mib_desk.formats
 
-trait Format  {
-
+trait Format {
+  def save();
 }
