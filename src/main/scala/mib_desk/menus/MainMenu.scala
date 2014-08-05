@@ -8,16 +8,7 @@ class MainMenu extends Menu("Welcome to MIB Registration Desk"){
     println( "\t1. New Registration" );
     println( "\t2. View Alien's Detail" );
     println( "\t3. Exit" );
-    var optionStr = getValue("Enter your choice");
-    var option = 0;
-
-    try {
-      option = optionStr.toInt;
-    } catch {
-      case e: NumberFormatException => println( "\n\tInvalid option!! Try again" );
-    }
-    
-    return handleOption( option );;
+    return handleOption(  getChoice() );;
   }
   
   def handleOption( option: Int ): Boolean = {
