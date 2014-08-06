@@ -6,8 +6,8 @@ class MainMenu extends Menu("Welcome to MIB Registration Desk"){
   def menu():Boolean = {
     println( "\n\tWhat would you like to do?" );
     println( "\t1. New Registration" );
-    println( "\t2. View Alien's Detail" );
-    println( "\t3. Exit" );
+    /*println( "\t2. View Alien's Detail" );*/
+    println( "\t2. Exit" );
     return handleOption(  getChoice() );;
   }
   
@@ -17,7 +17,7 @@ class MainMenu extends Menu("Welcome to MIB Registration Desk"){
         (new RegstrationMenu).show();
         return true;
       }
-      case 3 => return false;
+      case 2 => return false;
       case option => return true;
     }
   }

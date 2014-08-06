@@ -1,5 +1,8 @@
 package mib_desk.bean
 
+/*
+ * Alien Bean class
+ */
 case class Alien(
   codeName: String,
   bloodColor: String,
