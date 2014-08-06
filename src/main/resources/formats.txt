@@ -1,0 +1,2 @@
+Text=mib_desk.formats.TextFormat
+PDF=mib_desk.formats.PDFFormat

@@ -2,7 +2,7 @@ package mib_desk.formats
 
 import mib_desk.bean.Alien
 
-class Text(alien: Alien) extends Format( "Text", alien ) {
+class TextFormat extends Format( "Text" ) {
   def save(): Boolean = {
     return true;
   }
