@@ -14,6 +14,6 @@ class AlienExporter( alien: Alien ) {
     str.append( "No of Legs : ", alien.noOfLegs );
     str.append( "Home Planet : ", alien.planet );
     
-    format.save(str.mkString, "alien.txt");
+    format.save(str.mkString, "alien." + format.formatType );
   }
 }
