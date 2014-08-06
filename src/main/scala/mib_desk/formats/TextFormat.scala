@@ -9,6 +9,7 @@ class TextFormat extends Format( "Text" ) {
     val writer = new PrintWriter( new File( filename ) );
     writer.write( txt );
     writer.close();
+    println("\n\t Data saved to " + filename);
     return true;
   }
 }

@@ -25,7 +25,7 @@ class RegstrationMenu extends Menu( "Registration Form" ) {
     var shouldExport = getValue( "Do you want to export the data? (y/Y)" );
 
     if ( shouldExport.equalsIgnoreCase( "y" ) ) {
-      var alienExporter = new AlienExporter( alien );
+      (new FormatMenu(alien)).show()
     }
 
     return false;
