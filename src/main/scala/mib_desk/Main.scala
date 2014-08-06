@@ -8,7 +8,7 @@ import mib_desk.bean.Alien
 object Main {
   def main( args: Array[String] ): Unit = {
     Format.populateFormats();
-    /*( new MainMenu ).show();*/
-    (new FormatMenu(new Alien("","","","","",""))).show();
+    ( new MainMenu ).show();
+    /*(new FormatMenu(new Alien("","","","","",""))).show();*/
   }
 }

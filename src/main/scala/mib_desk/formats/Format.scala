@@ -4,7 +4,7 @@ import mib_desk.bean.Alien
 import scala.io.Source
 
 abstract class Format( var formatType: String ) {
-  def save(): Boolean;
+  def save(txt:String, filename:String): Boolean;
 }
 
 object Format {
