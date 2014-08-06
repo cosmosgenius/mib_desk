@@ -6,6 +6,11 @@ import com.itextpdf.text.pdf.PdfWriter
 import java.io.FileOutputStream
 import com.itextpdf.text.Paragraph
 
+/*
+ * PFDFormat store the incoming text into pdf file
+ * 
+ */
+
 class PDFFormat extends Format( "PDF" ) {
   def save( txt: String, filename: String ): Boolean = {
 
